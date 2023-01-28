@@ -1,0 +1,80 @@
+body{
+  background-color: #0b0b0e;
+  color: white;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+main{
+  display: grid;
+  place-content: center;
+}
+
+h1{
+  font-weight: 400;
+  font-size: 4rem;
+  margin-top: 20px;
+}
+
+#result {
+  aspect-ratio: 1/1;
+  width: 100%;
+  background:  #3a3a43;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+#result img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+textarea{
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b1e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+button:hover{
+  background-color: #2b2b2e;
+}
+
+.hidden{
+  display: none;
+}
+
+.spinner{
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
